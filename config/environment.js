@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'smart-cradle-web',
     environment: environment,
+    podModulePrefix: 'smart-cradle-web/pods',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
