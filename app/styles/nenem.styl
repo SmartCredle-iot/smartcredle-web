@@ -1,0 +1,275 @@
+body
+    background #86b1c2
+#wrap
+  height 50%
+  min-height 228px
+.baby
+    width 86px
+    height 225px
+    background #e8dcd8
+    border-radius 43px
+    box-shadow -15px -10px 0px #65a9c1
+    overflow hidden
+    position absolute
+    top 8%
+    left 38%
+    transform rotate(-40deg)
+    -webkit-transform rotate(-40deg)
+    animation initial
+    -webkit-animation initial
+    &.active
+      animation moving 1.2s ease-in-out infinite
+      -webkit-animation moving 1.2s ease-in-out infinite
+      &.alert
+        .face
+          animation face 1.2s ease-in-out infinite
+          -webkit-animation face 1.2s ease-in-out infinite
+          .eyes
+            width 60%
+            top 20px
+            &:before,
+            &:after
+              height 9px
+          .mouth
+            width 32px
+            height 18px
+            bottom 10px
+            animation mouth .3s ease-in-out infinite
+            -webkit-animation mouth .3s ease-in-out infinite
+            .tongue
+              display block
+    .face
+        margin 10px 22px 0 8px
+        width 60px
+        height 66px
+        background #f9c19f
+        border-radius 50%
+        position relative
+        animation initial
+        -webkit-animation initial
+        &:before
+            content ""
+            display block
+            width 20px
+            height 10px
+            background #edb256
+            border-bottom-left-radius 400%
+            border-bottom-right-radius 200%
+            position absolute
+            top 0
+            left 40%
+            transform rotate(-15deg)
+            -webkit-transform rotate(-15deg)
+        .eyes
+            top 26px
+            width 50%
+            margin-left -30%
+            height 10px
+            position absolute
+            left 50%
+            &:before
+                content ""
+                width 9px
+                height 7px
+                background #1b414c
+                border-radius 50%
+                float left
+            &:after
+                content ""
+                width 9px
+                height 7px
+                background #1b414c
+                border-radius 50%
+                float right
+        .mouth
+          width 18px
+          height 3px
+          bottom 18px
+          margin-left -16px
+          background #7e2e33
+          border-radius 10px
+          position absolute
+          left 50%
+          animation initial
+          -webkit-animation initial
+          .tongue
+            display none
+            margin-left -3px
+            width 6px
+            height 10px
+            background #ed5c56
+            border-top-left-radius 120%
+            border-top-right-radius 50%
+            position absolute
+            bottom 0
+            left 50%
+            z-index 1
+            animation tongue .3s ease-in-out infinite
+            -webkit-animation tongue .3s ease-in-out infinite
+    .blanket
+        width 200%
+        height 15px
+        background #cdd3d7
+        transform rotate(-30deg)
+        -webkit-transform rotate(-30deg)
+        position absolute
+        top 45%
+        left -30px
+        animation blanket 1.2s ease-in-out infinite
+        -webkit-animation blanket 1.2s ease-in-out infinite
+.milk_bottle
+    margin -120px 0 0 60px
+    position absolute
+    top 50%
+    left 50%
+    transform rotate(-130deg)
+    -webkit-transform rotate(-130deg)
+    animation bottlemove 1.7s ease-in-out infinite
+    -webkit-animation bottlemove 1.7s ease-in-out infinite
+    .bottle
+        margin-left 3px
+        width 30px
+        height 40px
+        background #e8dcd8
+        border-bottom-left-radius 5px
+        border-bottom-right-radius 5px
+        box-shadow 5px 5px 0 #65a9c1
+        position relative
+        z-index 4
+        &:before
+            content ""
+            display block
+            width 12px
+            height 2px
+            background #cdd3d7
+            position absolute
+            top 10px
+            left 5px
+            animation bottledetailmove 1.7s ease-in-out infinite
+            -webkit-animation bottledetailmove 1.7s ease-in-out infinite
+        &:after
+            content ""
+            display block
+            width 12px
+            height 2px
+            background #cdd3d7
+            position absolute
+            top 20px
+            left 5px
+            animation bottledetailmove 1.7s ease-in-out infinite
+            -webkit-animation bottledetailmove 1.7s ease-in-out infinite
+    .tube_bottom
+        width 36px
+        height 7px
+        background #f3cf9f
+        border-radius 5px
+        box-shadow 5px 5px 0 #65a9c1
+        position relative
+        z-index 3
+    .tube_middle
+        margin 0 auto
+        width 30px
+        height 7px
+        background #f1b980
+        border-top-left-radius 400%
+        border-top-right-radius 400%
+        box-shadow 5px 5px 0 #65a9c1
+    .tube_top
+        margin 0 auto
+        width 10px
+        height 7px
+        background #f1b980
+        border-top-left-radius 50%
+        border-top-right-radius 50%
+        box-shadow 5px 5px 0 #65a9c1
+.pacifier
+    margin 80px 0 0 -90px
+    position absolute
+    top 50%
+    left 50%
+    z-index 3
+    transform rotate(20deg)
+    -webkit-transform rotate(20deg)
+    .pacifier_top
+        width 15px
+        margin 0 auto
+        height 20px
+        background #e8dcd8
+        background linear-gradient(135deg, transparent 10px, #e8dcd8 0) top left, linear-gradient(225deg, transparent 10px, #e8dcd8 0) top right
+        background-size 50% 50%
+        background-repeat no-repeat
+        background-image radial-gradient(circle at -2px 7px, rgba(204, 0, 0, 0) 7px, #e8dcd8 5px), radial-gradient(circle at 10px 7px, rgba(204, 0, 0, 0) 7px, #e8dcd8 5px)
+        position relative
+        &:before
+            content ""
+            display block
+            width 15px
+            height 15px
+            background #e8dcd8
+            border-radius 50%
+            position absolute
+            top -10px
+            left 0
+    &.shadow
+        margin 83px 0 0 -95px
+        position absolute
+        top 50%
+        left 50%
+        z-index 2
+        transform rotate(20deg)
+        -webkit-transform rotate(20deg)
+        .pacifier_top
+            background #65a9c1
+            background linear-gradient(135deg, transparent 10px, #65a9c1 0) top left, linear-gradient(225deg, transparent 10px, #65a9c1 0) top right
+            background-size 50% 50%
+            background-repeat no-repeat
+            background-image radial-gradient(circle at -2px 7px, rgba(204, 0, 0, 0) 7px, #65a9c1 5px), radial-gradient(circle at 10px 7px, rgba(204, 0, 0, 0) 7px, #65a9c1 5px)
+        .pacifier_bottom
+            border 3px solid #65a9c1
+.pacifier_middle
+    width 20px
+    height 5px
+    background #7e2e33
+    border-radius 5px
+    position absolute
+    top 10px
+    left -2px
+    z-index 2
+    &:after
+        content ""
+        display block
+        margin 5px auto 0
+        width 7px
+        height 7px
+        background #7e2e33
+        border-bottom-left-radius 50%
+        border-bottom-right-radius 50%
+.pacifier_bottom
+    width 18px
+    height 18px
+    border 3px solid #ffae00
+    border-radius 50%
+    position absolute
+    top 15px
+    left -4px
+    z-index 1
+.pacifier.shadow .pacifier_top:before,
+.pacifier.shadow .pacifier_middle,
+.pacifier.shadow .pacifier_middle:after
+    background #65a9c1
+.misha
+    a
+        font-size 12px
+        font-weight bold
+        color #EA4C89
+        text-decoration none
+        position absolute
+        top 10px
+        left 10px
+        span
+            color #FFF
+        img
+            margin -2px 0 0 10px
+            width 20px
+            vertical-align middle
+            border-radius 10px

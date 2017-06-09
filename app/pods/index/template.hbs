@@ -1,1 +1,25 @@
-{{outlet}}
+<div id="wrap">
+  <div class="baby  {{if isCradle 'active'}} {{if isAlert 'alert'}}" {{action 'toggleCradle'}}>
+    <div class="face">
+      <div class="eyes"></div>
+      <div class="mouth">
+        <div class="tongue"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page-content baby-content">
+  <div class="content-block center">
+      <div href="#" class="menu-item {{if isMusic 'active'}}" {{action 'toggleMusic'}}>
+        {{fa-icon "music" size=4}}
+        <span class="menu-cat">Musica</span>
+      </div>
+      <div href="#" class="menu-item {{if isLight 'active'}}" {{action 'toggleLight'}}>
+        {{fa-icon "lightbulb-o" size=4}}
+        <span class="menu-cat" >Luz</span>
+      </div>
+      <div class="">
+        <p><a {{action 'toggleAlert'}} class="button {{if isAlert 'active'}}">Arte alerta</a></p>
+      </div>
+  </div>
+</div>

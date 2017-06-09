@@ -1,5 +1,6 @@
+/* global Framework7, Dom7 */
+
 import Ember from 'ember';
-import environment from 'smart-cradle-web/config/environment';
 
 export default Ember.Component.extend({
   classNames: 'navbar',
