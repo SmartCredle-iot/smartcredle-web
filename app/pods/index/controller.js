@@ -4,7 +4,7 @@ export default Ember.Controller.extend({
   isCradle: false,
   isAlert: false,
   isMusic: false,
-  isLight: true,
+  isLight: false,
   actions: {
     toggleMusic: function() {
       this.toggleProperty('isMusic');
