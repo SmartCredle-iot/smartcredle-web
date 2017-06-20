@@ -26,7 +26,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
-    ENV.apiBaseUrl = 'http://192.168.1.22';
+    ENV.apiBaseUrl = 'http://192.168.1.22:8080';
   }
 
   if (environment === 'test') {
